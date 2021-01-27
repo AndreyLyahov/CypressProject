@@ -32,5 +32,5 @@ it('By Tag Value', ()=>{
 it('Using Get with Find and Eq', ()=>{
 
     cy.visit("https://next.privat24.ua/deposit")
-    cy.get('tbody').find('td').find('div').find('button').eq('0').click()
+    cy.get('tbody').find('td').find('div').find('button').eq('0').click() //comment for git
 });
