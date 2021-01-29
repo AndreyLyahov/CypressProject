@@ -32,5 +32,11 @@ it('By Tag Value', ()=>{
 it('Using Get with Find and Eq', ()=>{
 
     cy.visit("https://next.privat24.ua/deposit")
-    cy.get('tbody').find('td').find('div').find('button').eq('0').click() //comment for git 111 assfasfsdfasdfasdfsf dsafsdfsdfsadfs 44444
+    cy.get('tbody').find('td').find('div').find('button').eq('0').click() //comment for git1 1111 dfgsdfgdfggit 
+});
+
+it('By Tag Value', ()=>{
+
+    cy.visit("https://www.facebook.com/")
+    cy.get('[name="pass"]')
 });
