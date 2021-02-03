@@ -1,42 +1,19 @@
-// describe('My First Test', () => {
-  //  it('Does not do much!', () => {
-    //  expect(true).to.equal(true)
-    //})
-  //}) 
+/// <reference types="Cypress" />
 
+it('', () => {
 
-it('By ID', ()=>{
+    cy.visit('https://docs.cypress.io/guides/getting-started/installing-cypress.html#Opening-Cypress')
+    cy.contains('Getting Started');
+})
 
-    cy.visit("https://www.facebook.com/")
-    cy.get('#email')
-});
+it('', () => {
 
-it('By Class', ()=>{
+    cy.visit('https://docs.cypress.io/guides/getting-started/installing-cypress.html#Opening-Cypress')
+    cy.contains('strong','GETTING Started');
+})
 
-    cy.visit("https://docs.cypress.io/api/commands/and.html#Syntax")
-    cy.get('.ds-input')
-});
+it.only('', () => {
 
-it('By Tag', ()=>{
-
-    cy.visit("https://docs.cypress.io/api/commands/and.html#Syntax")
-    cy.get('nav')
-});
-
-it('By Tag Value', ()=>{
-
-    cy.visit("https://www.facebook.com/")
-    cy.get('[name="pass"]')
-});
-
-it('Using Get with Find and Eq', ()=>{
-
-    cy.visit("https://next.privat24.ua/deposit")
-    cy.get('tbody').find('td').find('div').find('button').eq('0').click() //comment for git1 1111 dfgsdfgdfggit 
-});
-
-it('By Tag Value', ()=>{
-
-    cy.visit("https://www.facebook.com/")
-    cy.get('[name="pass"]')
-});
+    cy.visit('https://docs.cypress.io/guides/getting-started/installing-cypress.html#Opening-Cypress')
+    cy.contains('GETTING Started', {matchCase: false});
+})
