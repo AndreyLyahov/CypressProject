@@ -16,4 +16,4 @@ it.only('', () => {
 
     cy.visit('https://docs.cypress.io/guides/getting-started/installing-cypress.html#Opening-Cypress')
     cy.contains('GETTING Started', {matchCase: false});
-})
+}) ///test
